@@ -9,7 +9,6 @@ body{
     background-color: #f1f3f6;
 }
 
-/* HEADER */
 header{
     background-color: #1f4487;
     color: white;
@@ -26,13 +25,7 @@ nav a{
     margin-left: 20px;
 }
 
-/* CONTEÚDO */
-.container{
-    width: 80%;
-    margin: 30px auto;
-}
 
-/* BANNER */
 .banner{
     background-color: #1f4487;
     color: white;
@@ -46,19 +39,12 @@ nav a{
     margin-bottom: 10px;
 }
 
-/* TÍTULO */
 .titulo{
     color: #1f4487;
     margin-bottom: 20px;
     letter-spacing: 2px;
 }
 
-/* CARDS */
-.cards{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
 
 .card{
     background-color: white;
@@ -81,17 +67,6 @@ nav a{
     margin-bottom: 20px;
 }
 
-.card h3{
-    color: #1f4487;
-    margin-bottom: 10px;
-}
-
-.card p{
-    color: gray;
-    font-size: 14px;
-}
-
-/* FOOTER */
 footer{
     background-color: #1f4487;
     color: white;
