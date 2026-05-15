@@ -6,9 +6,11 @@
 }
 
 body {
+    display:flex;
+    flex-direction: column;
     background-color: #f1f3f6;
-    background-image: url('../IMG/teste.png');
     height: 100%;
+    min-height: 100vh;
 }
 
 header {
@@ -17,6 +19,7 @@ header {
     padding: 15px 40px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 nav a {
@@ -27,9 +30,18 @@ nav a {
     align-items: center;
 }
 
+.menu {
+    display: flex;    
+}
+
+.selec {
+
+}
 .container {
     width: 80%;
     margin: 30px auto;
+    gap: 15px;
+    flex: 1;
 }
 
 .banner {
@@ -55,18 +67,15 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: flex-start;
 }
 
 .card {
     background-color: white;
-    width: 180px;
-    padding: 30px 20px;
-    border-radius: 10px;
-    text-align: center;
-
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-
-    transition: 0.3s;
+    flex: 1 1 calc(25% - 20px);
+    min-width: 200px;
+    border-radius: 15px;
+    padding: 10px;
 }
 
 .card:hover {
@@ -76,6 +85,7 @@ nav a {
 .icone {
     font-size: 50px;
     margin-bottom: 20px;
+    flex: 1;
 }
 
 .card h3 {
@@ -94,7 +104,5 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
