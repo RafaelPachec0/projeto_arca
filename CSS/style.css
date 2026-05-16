@@ -6,7 +6,7 @@
 }
 
 body {
-    display:flex;
+    display: flex;
     flex-direction: column;
     background-color: #f1f3f6;
     height: 100%;
@@ -26,22 +26,27 @@ nav a {
     color: white;
     text-decoration: none;
     margin-left: 20px;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
 }
 
 .menu {
-    display: flex;    
+    display: flex;   
 }
 
-.selec {
-
+.icon {
+    width: 50px;
+    height: 50px;
 }
+
 .container {
     width: 80%;
+    max-width: 1060px;
     margin: 30px auto;
     gap: 15px;
     flex: 1;
+    padding: 0 20px;
 }
 
 .banner {
@@ -72,15 +77,35 @@ nav a {
 
 .card {
     background-color: white;
-    flex: 1 1 calc(25% - 20px);
-    min-width: 200px;
+    flex: 0 0 240px;     
     border-radius: 15px;
-    padding: 10px;
+    padding: 30px 20px;
+    box-shadow: 5px 5px 5px #07789128;
+    text-align: center;
+    transition: transform 0.2s ease;
 }
 
 .card:hover {
     transform: translateY(-5px);
 }
+
+.circulo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+}
+
+#fundo-adocao { background-color: #f2226e2a; }
+#fundo-cadast { background-color: #7a378c2c; }
+#fundo-denuncia { background-color: #d936542d; }
+#fundo-resgate { background-color: #f287052c; }
+#fundo-vacina { background-color: #25d9522d; }
+#fundo-castracao { background-color: #62c3d92d; }
+#fundo-historico { background-color: #2a548c27; }
 
 .icone {
     font-size: 50px;
@@ -93,12 +118,6 @@ nav a {
     margin-bottom: 10px;
 }
 
-.card p {
-    color: gray;
-    font-size: 14px;
-}
-
-/* FOOTER */
 footer {
     background-color: #1f4487;
     color: white;

@@ -1,76 +1,85 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programa ARCA</title>
+    <title>Projeto ARCA</title>
     <link rel="stylesheet" href="./CSS/style.css">
+    <style>
+        body {
+            background-color: #F0F1F2
+        }
+    </style>
 </head>
 
 <body>
     <header>
-            <h2>Programa ARCA</h2>
+        <div class="logo">
+            <h2>Projeto ARCA</h2>
+        </div>
 
-            <nav>
-                <a href="#">Início</a>
-                <a href="#">Perfil</a>
-                <a href="#">Ajuda</a>
-            </nav>
+        <nav class="menu-central">
+            <a href="#" class="selec">Início</a>
+            <a href="#" class="selec">Perfil</a>
+            <a href="#" class="selec">Ajuda</a>
+        </nav>
+
+        <div class="icones-apoio">
+            <a href="#" class="selec icon"><img src="../ICONES/config.png" alt="Configurações"></a>
+            <a href="#" class="selec icon"><img src="../ICONES/notific.png" alt="Notificações"></a>
+        </div>
     </header>
 
-    <!-- CONTEÚDO -->
     <div class="container">
 
-        <!-- BANNER -->
         <div class="banner">
             <h1>Olá, bem-vindo!</h1>
             <p>Selecione um dos serviços abaixo para começar</p>
         </div>
 
-        <!-- SERVIÇOS -->
         <h2 class="titulo">NOSSOS SERVIÇOS</h2>
 
         <div class="cards">
 
             <div class="card">
-                <div class="icone">❤</div>
+                <div class="icone circulo" id="fundo-adocao"><img src="./ICONES/coracao.png" alt="Adoção de Animais"></div>
                 <h3>Adoção de Animais</h3>
                 <p>Encontre seu novo melhor amigo</p>
             </div>
 
             <div class="card">
-                <div class="icone">🐾</div>
+                <div class="icone circulo" id="fundo-cadast"><img src="./ICONES/pata_pet.png" alt="Adoção de Animais"></div>
                 <h3>Cadastro de Pet</h3>
                 <p>Registre seu animal</p>
             </div>
 
             <div class="card">
-                <div class="icone">⚠</div>
+                <div class="icone circulo" id="fundo-denuncia"><img src="./ICONES/denuncia.png" alt="Adoção de Animais"></div>
                 <h3>Denúncia de Maus-Tratos</h3>
                 <p>Reporte casos de abuso animal</p>
             </div>
 
             <div class="card">
-                <div class="icone">🚑</div>
+                <div class="icone circulo" id="fundo-resgate"><img src="./ICONES/resgate.png" alt="Adoção de Animais"></div>
                 <h3>Solicitar Resgate</h3>
                 <p>Solicite ajuda para animais</p>
             </div>
 
             <div class="card">
-                <div class="icone">💉</div>
+                <div class="icone circulo" id="fundo-vacina"><img src="./ICONES/vacinacao.png" alt="Adoção de Animais"></div>
                 <h3>Solicitar Vacinação</h3>
                 <p>Agende vacinação</p>
             </div>
 
             <div class="card">
-                <div class="icone">✂</div>
+                <div class="icone circulo" id="fundo-castracao"><img src="./ICONES/castracao.png" alt="Adoção de Animais"></div>
                 <h3>Solicitar Castração</h3>
                 <p>Solicite castração gratuita</p>
             </div>
 
             <div class="card">
-                <div class="icone">📄</div>
+                <div class="icone circulo" id="fundo-historico"><img src="./ICONES/historico.png" alt="Adoção de Animais"></div>
                 <h3>Histórico de Solicitações</h3>
                 <p>Acompanhe seus pedidos</p>
             </div>
