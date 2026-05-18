@@ -15,7 +15,7 @@
         </div>
 
         <nav class="menu">
-            <a href="#" class="selec">Início</a>
+            <a href="../index.html" class="selec">Início</a>
             <a href="#" class="selec">Perfil</a>
             <a href="#" class="selec">Ajuda</a>
         </nav>
@@ -32,13 +32,16 @@
         <div class="titulo">
             <p><b>MINHA CONTA / HISTÓRICO</b></p>
 
-            <h1>Histórico de Solicitações</h1>
+            <h1><a href="../index.html"><span style="font-size: 40px;">
+                        < </span></a> Histórico de Solicitações</h1>
 
             <p>Acompanhe o status de todas as suas solicitações</p>
         </div>
 
         <div class="filtros">
             <h3>Filtros de Busca</h3>
+            <hr>
+            <br>
             <div class="linha-filtros">
                 <div class="campo">
                     <label>Filtros por Status</label>
@@ -64,7 +67,7 @@
 
                 <div class="campo">
                     <label>Buscar por Protocolo</label>
-                    <input type="text" placeholder="Digite o número de Protocolo" id="input-protocolo">
+                    <input type="text" placeholder="Digite o número de Protocolo" id="busca-protocol">
                 </div>
 
             </div>
@@ -72,40 +75,43 @@
             <button class="botao-filtros">Aplicar Filtros</button>
         </div>
 
-        <h3>Minhas Solicitações</h3>
+        <h3 id="h3-solicit">Minhas Solicitações</h3>
+        <br>
+        <hr>
+        <br>
 
         <div class="lista-historico">
 
             <div class="card-solicitacao">
                 <div class="info-solicitacao">
-                    <h2>Solicitação de Adoção</h2>
-                    <p>Protocolo</p>
+                    <h3>Solicitação de Adoção</h3>
+                    <p class="protocolo">Protocolo #000000</p>
                 </div>
-                    <p class="status" id="aprovado">Aprovado</p>
+                <p class="status" id="aprovado">Aprovado</p>
             </div>
 
             <div class="card-solicitacao">
                 <div class="info-solicitacao">
-                    <h2>Solicitação de Castração</h2>
-                    <p>Protocolo</p>
+                    <h3>Solicitação de Castração</h3>
+                    <p class="protocolo">Protocolo #000000</p>
                 </div>
-                    <p class="status" id="pendente">Pendente</p>
+                <p class="status" id="pendente">Pendente</p>
             </div>
 
             <div class="card-solicitacao">
                 <div class="info-solicitacao">
-                    <h2>Solicitação de Maus-Tratos</h2>
-                    <p>Protocolo</p>
+                    <h3>Solicitação de Maus-Tratos</h3>
+                    <p class="protocolo">Protocolo #000000</p>
                 </div>
-                    <p class="status" id="finalizado">Finalizado</p>
+                <p class="status" id="finalizado">Finalizado</p>
             </div>
 
             <div class="card-solicitacao">
                 <div class="info-solicitacao">
-                    <h2>Solicitação de Resgate</h2>
-                    <p>Protocolo</p>
+                    <h3>Solicitação de Resgate</h3>
+                    <p class="protocolo">Protocolo #000000</p>
                 </div>
-                    <p class="status" id="cancelado">Cancelado</p>
+                <p class="status" id="cancelado">Cancelado</p>
             </div>
 
         </div>
