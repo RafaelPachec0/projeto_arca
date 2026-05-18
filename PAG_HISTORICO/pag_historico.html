@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Histórico de Solicitações</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+
+<body class="fundo-historico-pagina">
+    <header>
+        <div class="logo">
+            <h2>Projeto ARCA</h2>
+        </div>
+
+        <nav class="menu">
+            <a href="#" class="selec">Início</a>
+            <a href="#" class="selec">Perfil</a>
+            <a href="#" class="selec">Ajuda</a>
+        </nav>
+
+        <div class="icones-apoio">
+            <a href="#" class="selec icon"><img src="../ICONES/config.png" alt="Configurações" height="30px"
+                    width="30px"></a>
+            <a href="#" class="selec icon"><img src="../ICONES/notific.png" alt="Notificações" height="30px"
+                    width="30px"></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="titulo">
+            <p><b>MINHA CONTA / HISTÓRICO</b></p>
+
+            <h1>Histórico de Solicitações</h1>
+
+            <p>Acompanhe o status de todas as suas solicitações</p>
+        </div>
+
+        <div class="filtros">
+            <h3>Filtros de Busca</h3>
+            <div class="linha-filtros">
+                <div class="campo">
+                    <label>Filtros por Status</label>
+                    <select>
+                        <option>---</option>
+                        <option value="aprovado">Aprovado</option>
+                        <option value="pendente">Pendente</option>
+                        <option value="finalizado">Finalizado</option>
+                        <option value="cancelado">Cancelado</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label>Filtrar por Tipo</label>
+                    <select>
+                        <option>---</option>
+                        <option value="adocao">Solicitação de Adoção</option>
+                        <option value="castracao">Solicitação de Castração</option>
+                        <option value="adocao">Solicitação de Adoção</option>
+                        <option value="adocao">Solicitação de Adoção</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label>Buscar por Protocolo</label>
+                    <input type="text" placeholder="Digite o número de Protocolo" id="input-protocolo">
+                </div>
+
+            </div>
+
+            <button class="botao-filtros">Aplicar Filtros</button>
+        </div>
+
+        <h3>Minhas Solicitações</h3>
+
+        <div class="lista-historico">
+
+            <div class="card-solicitacao">
+                <div class="info-solicitacao">
+                    <h2>Solicitação de Adoção</h2>
+                    <p>Protocolo</p>
+                </div>
+                    <p class="status" id="aprovado">Aprovado</p>
+            </div>
+
+            <div class="card-solicitacao">
+                <div class="info-solicitacao">
+                    <h2>Solicitação de Castração</h2>
+                    <p>Protocolo</p>
+                </div>
+                    <p class="status" id="pendente">Pendente</p>
+            </div>
+
+            <div class="card-solicitacao">
+                <div class="info-solicitacao">
+                    <h2>Solicitação de Maus-Tratos</h2>
+                    <p>Protocolo</p>
+                </div>
+                    <p class="status" id="finalizado">Finalizado</p>
+            </div>
+
+            <div class="card-solicitacao">
+                <div class="info-solicitacao">
+                    <h2>Solicitação de Resgate</h2>
+                    <p>Protocolo</p>
+                </div>
+                    <p class="status" id="cancelado">Cancelado</p>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>© Copyright GroupTwo</p>
+    </footer>
+</body>
+
+</html>
