@@ -1,204 +1,222 @@
-<!doctype html>
+.<!doctype html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adoção de Animais</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Adoção de Animais</title>
-  <link rel="stylesheet" href="../CSS/style.css" />
-</head>
+  <body class="fundo-adocao-pagina">
+    <header>
+      <div class="logo">
+        <h2>Projeto ARCA</h2>
+      </div>
 
-<body class="fundo-adocao-pagina">
-  <header>
-    <div class="logo">
-      <h2>Projeto ARCA</h2>
+      <nav class="menu-central">
+        <a href="../index.html" class="selec">Início</a>
+        <a href="#" class="selec">Perfil</a>
+        <a href="#" class="selec">Ajuda</a>
+      </nav>
+
+      <div class="icones-apoio">
+        <a href="#" class="selec icon"
+          ><img
+            src="../ICONES/config.png"
+            alt="Configurações"
+            height="30px"
+            width="30px"
+        /></a>
+        <a href="../PAG_NOTIFICACAO/pag_notificacao.html" class="selec icon"
+          ><img
+            src="../ICONES/notific.png"
+            alt="Notificações"
+            height="30px"
+            width="30px"
+        /></a>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="titulo">
+        <p>SERVIÇOS / ADOÇÃO</p>
+
+        <h1>
+          <a href="../index.html"><span style="font-size: 40px"> < </span></a>
+          Adoção de Animais
+        </h1>
+
+        <p>Encontre um amigo para adotar</p>
+      </div>
+
+      <div class="filtros">
+        <h3>Filtros de Busca</h3>
+        <div class="linha-filtros">
+          <div class="campo">
+            <label>Espécie</label>
+            <select>
+              <option>---</option>
+              <option value="cachorro">--- Cachorro ---</option>
+              <option value="labrador">Labrador</option>
+              <option value="pastor-alemao">Partor Alemão</option>
+              <option value="vira-lataC">Cachorro Vira-lata</option>
+              <option value="poodle">Poodle</option>
+              <option value="pug">Pug</option>
+              <option value="gato">--- Gato ---</option>
+              <option value="persa">persa</option>
+              <option value="siames">Siamês</option>
+              <option value="vira-lataG">Gato Vira-lata</option>
+              <option value="bengal">Bengal</option>
+              <option value="ragdoll">Ragdoll</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label>Idade</label>
+            <select>
+              <option>---</option>
+              <option value="filhote">Filhote (Até 1 ano)</option>
+              <option value="jovem">Jovem (1 a 3 anos)</option>
+              <option value="adulto">Adulto (3 a 7 anos)</option>
+              <option value="idoso">Idoso (Mais de 7 anos)</option>
+              <option value="todas">Todas as Idades</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label>Porte</label>
+            <select>
+              <option>---</option>
+              <option value="mini">Mini / Miniatura (Até 5kg)</option>
+              <option value="pequeno">Pequeno (5kg a 10kg)</option>
+              <option value="medio">Médio (10kg a 25kg)</option>
+              <option value="grande">Grande (25kg a 45kg)</option>
+              <option value="gigante">Gigante (Mais de 45kg)</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label>Gênero</label>
+            <select>
+              <option>---</option>
+              <option value="macho">Macho</option>
+              <option value="femea">Fêmea</option>
+            </select>
+          </div>
+        </div>
+
+        <button class="botao-filtros">Aplicar Filtros</button>
+      </div>
+
+      <div class="cards">
+        <div class="card-pet">
+          <div class="imagem-pet">
+            <img
+              src="../IMG/cachorro1.png"
+              alt="Chocolinho"
+              class="foto-animal"
+            />
+          </div>
+          <div class="info-pet">
+            <h2>Chocolinho</h2>
+            <p>2 anos . Labrador</p>
+            <span class="macho">Macho</span>
+            <button class="btn-detalhes">Ver Detalhes</button>
+          </div>
+        </div>
+
+        <div class="card-pet">
+          <div class="imagem-pet">
+            <img src="../IMG/gato1.png" alt="Dolores" class="foto-animal" />
+          </div>
+          <div class="info-pet">
+            <h2>Dolores</h2>
+            <p>1 ano . Vira-lata</p>
+            <span class="femea">Fêmea</span>
+            <button class="btn-detalhes">Ver Detalhes</button>
+          </div>
+        </div>
+
+        <div class="card-pet">
+          <div class="imagem-pet">
+            <img src="../IMG/cachorro2.png" alt="Luther" class="foto-animal" />
+          </div>
+          <div class="info-pet">
+            <h2>Luther</h2>
+            <p>3 anos . Pastor Alemão</p>
+            <span class="macho">Macho</span>
+            <button class="btn-detalhes">Ver Detalhes</button>
+          </div>
+        </div>
+
+        <div class="card-pet">
+          <div class="imagem-pet">
+            <img src="../IMG/gato2.png" alt="Eclipse" class="foto-animal" />
+          </div>
+          <div class="info-pet">
+            <h2>Eclipse</h2>
+            <p>6 meses . Vira-lata</p>
+            <span class="femea">Fêmea</span>
+            <button class="btn-detalhes">Ver Detalhes</button>
+          </div>
+        </div>
+
+        <div class="card-pet">
+          <div class="imagem-pet">
+            <img
+              src="../IMG/cachorro1.png"
+              alt="Chocolinho"
+              class="foto-animal"
+            />
+          </div>
+          <div class="info-pet">
+            <h2>Chocolinho</h2>
+            <p>2 anos . Labrador</p>
+            <span class="macho">Macho</span>
+            <button class="btn-detalhes">Ver Detalhes</button>
+          </div>
+        </div>
+
+        <div class="card-pet">
+          <div class="imagem-pet">
+            <img src="../IMG/gato1.png" alt="Dolores" class="foto-animal" />
+          </div>
+          <div class="info-pet">
+            <h2>Dolores</h2>
+            <p>1 ano . Vira-lata</p>
+            <span class="femea">Fêmea</span>
+            <button class="btn-detalhes">Ver Detalhes</button>
+          </div>
+        </div>
+
+        <div class="card-pet">
+          <div class="imagem-pet">
+            <img src="../IMG/cachorro2.png" alt="Luther" class="foto-animal" />
+          </div>
+          <div class="info-pet">
+            <h2>Luther</h2>
+            <p>3 anos . Pastor Alemão</p>
+            <span class="macho">Macho</span>
+            <button class="btn-detalhes">Ver Detalhes</button>
+          </div>
+        </div>
+
+        <div class="card-pet">
+          <div class="imagem-pet">
+            <img src="../IMG/gato2.png" alt="Eclipse" class="foto-animal" />
+          </div>
+          <div class="info-pet">
+            <h2>Eclipse</h2>
+            <p>6 meses . Vira-lata</p>
+            <span class="femea">Fêmea</span>
+            <button class="btn-detalhes">Ver Detalhes</button>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <nav class="menu-central">
-      <a href="../index.html" class="selec">Início</a>
-      <a href="#" class="selec">Perfil</a>
-      <a href="#" class="selec">Ajuda</a>
-    </nav>
-
-    <div class="icones-apoio">
-      <a href="#" class="selec icon"><img src="../ICONES/config.png" alt="Configurações" height="30px" width="30px"></a>
-      <a href="../PAG_NOTIFICACAO/pag_notificacao.html" class="selec icon"><img src="../ICONES/notific.png" alt="Notificações" height="30px" width="30px"></a>
-    </div>
-  </header>
-
-  <div class="container">
-    <div class="titulo">
-      <p>SERVIÇOS / ADOÇÃO</p>
-
-      <h1><a href="../index.html"><span style="font-size: 40px;">
-            < </span></a> Adoção de Animais</h1>
-
-      <p>Encontre um amigo para adotar</p>
-    </div>
-
-    <div class="filtros">
-      <h3>Filtros de Busca</h3>
-      <div class="linha-filtros">
-        <div class="campo">
-          <label>Espécie</label>
-          <select>
-            <option>---</option>
-            <option value="cachorro">--- Cachorro ---</option>
-            <option value="labrador">Labrador</option>
-            <option value="pastor-alemao">Partor Alemão</option>
-            <option value="vira-lataC">Cachorro Vira-lata</option>
-            <option value="poodle">Poodle</option>
-            <option value="pug">Pug</option>
-            <option value="gato">--- Gato ---</option>
-            <option value="persa">persa</option>
-            <option value="siames">Siamês</option>
-            <option value="vira-lataG">Gato Vira-lata</option>
-            <option value="bengal">Bengal</option>
-            <option value="ragdoll">Ragdoll</option>
-          </select>
-        </div>
-
-        <div class="campo">
-          <label>Idade</label>
-          <select>
-            <option>---</option>
-            <option value="filhote">Filhote (Até 1 ano)</option>
-            <option value="jovem">Jovem (1 a 3 anos)</option>
-            <option value="adulto">Adulto (3 a 7 anos)</option>
-            <option value="idoso">Idoso (Mais de 7 anos)</option>
-            <option value="todas">Todas as Idades</option>
-          </select>
-        </div>
-
-        <div class="campo">
-          <label>Porte</label>
-          <select>
-            <option>---</option>
-            <option value="mini">Mini / Miniatura (Até 5kg)</option>
-            <option value="pequeno">Pequeno (5kg a 10kg)</option>
-            <option value="medio">Médio (10kg a 25kg)</option>
-            <option value="grande">Grande (25kg a 45kg)</option>
-            <option value="gigante">Gigante (Mais de 45kg)</option>
-          </select>
-        </div>
-
-        <div class="campo">
-          <label>Gênero</label>
-          <select>
-            <option>---</option>
-            <option value="macho">Macho</option>
-            <option value="femea">Fêmea</option>
-          </select>
-        </div>
-      </div>
-
-      <button class="botao-filtros">Aplicar Filtros</button>
-    </div>
-
-    <div class="cards">
-
-      <div class="card-pet">
-        <div class="imagem-pet">
-          <img src="../IMG/cachorro1.png" alt="Chocolinho" class="foto-animal">
-        </div>
-        <div class="info-pet">
-          <h2>Chocolinho</h2>
-          <p>2 anos . Labrador</p>
-          <span class="macho">Macho</span>
-          <button class="btn-detalhes">Ver Detalhes</button>
-        </div>
-      </div>
-
-      <div class="card-pet">
-        <div class="imagem-pet">
-          <img src="../IMG/gato1.png" alt="Dolores" class="foto-animal">
-        </div>
-        <div class="info-pet">
-          <h2>Dolores</h2>
-          <p>1 ano . Vira-lata</p>
-          <span class="femea">Fêmea</span>
-          <button class="btn-detalhes">Ver Detalhes</button>
-        </div>
-      </div>
-
-      <div class="card-pet">
-        <div class="imagem-pet">
-          <img src="../IMG/cachorro2.png" alt="Luther" class="foto-animal">
-        </div>
-        <div class="info-pet">
-          <h2>Luther</h2>
-          <p>3 anos . Pastor Alemão</p>
-          <span class="macho">Macho</span>
-          <button class="btn-detalhes">Ver Detalhes</button>
-        </div>
-      </div>
-
-      <div class="card-pet">
-        <div class="imagem-pet">
-          <img src="../IMG/gato2.png" alt="Eclipse" class="foto-animal">
-        </div>
-        <div class="info-pet">
-          <h2>Eclipse</h2>
-          <p>6 meses . Vira-lata</p>
-          <span class="femea">Fêmea</span>
-          <button class="btn-detalhes">Ver Detalhes</button>
-        </div>
-      </div>
-
-      <div class="card-pet">
-        <div class="imagem-pet">
-          <img src="../IMG/cachorro1.png" alt="Chocolinho" class="foto-animal">
-        </div>
-        <div class="info-pet">
-          <h2>Chocolinho</h2>
-          <p>2 anos . Labrador</p>
-          <span class="macho">Macho</span>
-          <button class="btn-detalhes">Ver Detalhes</button>
-        </div>
-      </div>
-
-      <div class="card-pet">
-        <div class="imagem-pet">
-          <img src="../IMG/gato1.png" alt="Dolores" class="foto-animal">
-        </div>
-        <div class="info-pet">
-          <h2>Dolores</h2>
-          <p>1 ano . Vira-lata</p>
-          <span class="femea">Fêmea</span>
-          <button class="btn-detalhes">Ver Detalhes</button>
-        </div>
-      </div>
-
-      <div class="card-pet">
-        <div class="imagem-pet">
-          <img src="../IMG/cachorro2.png" alt="Luther" class="foto-animal">
-        </div>
-        <div class="info-pet">
-          <h2>Luther</h2>
-          <p>3 anos . Pastor Alemão</p>
-          <span class="macho">Macho</span>
-          <button class="btn-detalhes">Ver Detalhes</button>
-        </div>
-      </div>
-
-      <div class="card-pet">
-        <div class="imagem-pet">
-          <img src="../IMG/gato2.png" alt="Eclipse" class="foto-animal">
-        </div>
-        <div class="info-pet">
-          <h2>Eclipse</h2>
-          <p>6 meses . Vira-lata</p>
-          <span class="femea">Fêmea</span>
-          <button class="btn-detalhes">Ver Detalhes</button>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <footer>
-    <p>© Copyright GroupTwo</p>
-  </footer>
-</body>
-
+    <footer>
+      <p>© Copyright GroupTwo</p>
+    </footer>
+  </body>
 </html>

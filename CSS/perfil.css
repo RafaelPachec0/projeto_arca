@@ -1,0 +1,26 @@
+.card_user {
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px #07789128;
+}
+
+.foto_user {
+  padding: 40px;
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+}
+
+#imagem_user {
+  height: 100px;
+  width: 100px;
+  border: 1px solid;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.info_user {
+  justify-content: start;
+  padding: 50px;
+}
