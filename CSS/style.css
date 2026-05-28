@@ -21,6 +21,10 @@ header {
     justify-content: space-between;
 }
 
+nav.menu, nav.menu-central {
+    display: flex;   
+}
+
 nav a {
     color: white;
     text-decoration: none;
@@ -28,10 +32,6 @@ nav a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-}
-
-.menu {
-    display: flex;   
 }
 
 a {
@@ -52,8 +52,14 @@ a {
     padding: 0 20px;
 }
 
+.titulo {
+    color: #1f4487;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
 hr {
-    border: 1px solid #e2e2e2;
+    border: 1px solid #eee;
 }
 
 footer {
@@ -63,32 +69,6 @@ footer {
     padding: 20px;
     width: 100%;
     flex-shrink: 0;
-}
-
-.banner {
-    background-color: #1f4487;
-    color: white;
-    padding: 50px;
-    border-radius: 5px;
-    margin-bottom: 40px;
-}
-
-.banner h1 {
-    font-size: 50px;
-    margin-bottom: 10px;
-}
-
-.titulo {
-    color: #1f4487;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-}
-
-.fundo-adocao-pagina {
-    background-image: url("../IMG/background_adocao.png");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .filtros {
@@ -127,75 +107,9 @@ footer {
     font-weight: 600;
 }
 
-.fundo-historico-pagina {
-    background-image: url("../IMG/background_historico.png");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.lista-historico {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: flex-start;
-}
-
-.card {
-    background-color: white;
-    flex: 0 0 240px;     
-    border-radius: 15px;
-    padding: 30px 20px; 
-    box-shadow: 3px 3px 3px #07789128;
-    text-align: center;
-    transition: transform 0.2s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card h2, .card h3 {
-    color: #1f4487;
-    margin-bottom: 10px;
-}
-
-.circulo {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto 20px auto;
-}
-
-.icone {
-    font-size: 50px;
-    margin-bottom: 20px;
-    flex: 1;
-}
-
-.link-card {
-    display: contents;
-}
-
-#fundo-adocao { background-color: #f2226e2a; }
-#fundo-cadast { background-color: #7a378c2c; }
-#fundo-denuncia { background-color: #d936542d; }
-#fundo-resgate { background-color: #f287052c; }
-#fundo-vacina { background-color: #25d9522d; }
-#fundo-castracao { background-color: #62c3d92d; }
-#fundo-historico { background-color: #2a548c27; }
-
-.campo select {
+.campo select, #busca, #busca-protocol, #input-protocolo {
     padding: 10px;
+    margin: 0;
     border: 1px solid #ccc;
     border-radius: 5px;
     color: #555;
@@ -215,116 +129,6 @@ footer {
     align-self: flex-start; 
 }
 
-.card-pet {
-    background-color: white;
-    flex: 0 0 240px;     
-    border-radius: 15px;
-    padding-bottom: 20px; 
-    box-shadow: 3px 3px 3px #07789128;
-    text-align: center;
-    transition: transform 0.2s ease;
-    overflow: hidden; 
-}
-
-.card-pet:hover {
-    transform: translateY(-5px);
-}
-
-.imagem-pet {
-    height: 160px; 
-    width: 100%;
-    overflow: hidden;
-}
-
-.foto-animal {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-}
-
-.info-pet {
-    padding: 15px;
-}
-
-.btn-detalhes {
-    background-color: #1f4487;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 8px;
-    width: 100%;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.femea {
-    background-color: #7a378c1a;
-    color: #7a378c;
-    border-radius: 12px;
-    padding: 5px 15px;
-    margin: 8px 0;
-    display: inline-block;
-    font-weight: bold;
-    font-size: 13px;
-}
-
-.macho {
-    background-color: #25c3d91a;
-    color: #1e7d8f;
-    border-radius: 12px;
-    padding: 5px 15px;
-    margin: 8px 0;
-    display: inline-block;
-    font-weight: bold;
-    font-size: 13px;
-}
-
-#busca {
-    padding: 10px;
-    margin: 0;
-    border: 1px solid #ccc;
-    color: #555;
-    border-radius: 5px;
-    gap: 10px;
-    flex: 1;
-}
-
-#h3-solicit {
-    color: #1f4487;
-}
-
-.card-solicitacao {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    width: 100%;
-    border-radius: 15px;
-    box-shadow: 3px 3px 3px #07789128;
-    padding: 15px 25px;
-}
-
-.card-notificacao {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    width: 100%;
-    border-radius: 15px;
-    box-shadow: 3px 3px 3px #07789128;
-    padding: 15px 25px;
-}
-
-.info-solicitacao {
-    padding: 5px 0;
-}
-
-.protocolo {
-    color: #979797;
-    font-size: 13px;
-}
-
 .status {
     text-align: center;
     font-weight: bold;
@@ -333,39 +137,4 @@ footer {
     font-size: 14px;
     min-width: 100px;
     margin: 0;
-}
-
-#aprovado {
-    background-color: #21cf5534;
-    color: #21CF55;
-}
-
-#pendente {
-    background-color: #e3c30e31;
-    color: #E3C30E;
-}
-
-#finalizado {
-    background-color: #e0364731;
-    color: #E03647;
-}
-
-#cancelado {
-    background-color: #9e9e9e2a;
-    color: #9E9E9E;
-}
-
-#novo {
-    background-color: #21cf5534;
-    color: #21CF55;
-}
-
-#nao-lido {
-    background-color: #e0364731;
-    color: #E03647;
-}
-
-#lido {
-    background-color: #9e9e9e2a;
-    color: #9E9E9E;
 }
