@@ -1,0 +1,73 @@
+body {
+  color: #1f4487;
+}
+
+.card_user {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px #07789128;
+  padding: 30px;
+  gap: 30px;
+}
+
+#imagem_user {
+  height: 120px;
+  width: 120px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.info_user {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.lista-perfil {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card-perfil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px #07789128;
+  padding: 15px 25px;
+}
+
+.bloco-esquerda-perfil {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+p {
+  color: #5a6b85;
+}
+
+.icon_perfil {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #17468b88;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+#background_pet {
+  background-color: #7a378c2c;
+  object-fit: contain;
+  padding: 8px;
+}
+
+.seta-link {
+  color: #1f4487;
+  font-weight: bold;
+}
