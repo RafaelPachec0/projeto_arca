@@ -57,17 +57,35 @@ p {
   height: 45px;
   border-radius: 50%;
   background-color: #17468b88;
-  object-fit: cover;
   box-sizing: border-box;
 }
 
 #background_pet {
   background-color: #7a378c2c;
+}
+
+.background_icon {
+  background-color: #0a55ac2c;
   object-fit: contain;
   padding: 8px;
+  object-fit: cover;
 }
+
 
 .seta-link {
   color: #1f4487;
   font-weight: bold;
+}
+
+.card_sair {
+  background-color: white;
+  color: #E03647;
+  padding: 15px;
+  border-radius: 15px;
+  border: 2px solid
+}
+
+.icon_sair {
+  width: 30px;
+  height: 30px;
 }
