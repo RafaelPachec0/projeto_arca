@@ -1,0 +1,66 @@
+.banner {
+    background-color: #1f4487;
+    color: white;
+    padding: 50px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.banner h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.card {
+    background-color: white;
+    flex: 0 0 240px;     
+    border-radius: 15px;
+    padding: 30px 20px; 
+    box-shadow: 3px 3px 3px #07789128;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h2, .card h3 {
+    color: #1f4487;
+    margin-bottom: 10px;
+}
+
+.circulo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+}
+
+.icone {
+    font-size: 50px;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
+.link-card {
+    display: contents;
+}
+
+#fundo-adocao { background-color: #f2226e2a; }
+#fundo-cadast { background-color: #7a378c2c; }
+#fundo-denuncia { background-color: #d936542d; }
+#fundo-resgate { background-color: #f287052c; }
+#fundo-vacina { background-color: #25d9522d; }
+#fundo-castracao { background-color: #62c3d92d; }
+#fundo-historico { background-color: #2a548c27; }
