@@ -57,7 +57,8 @@ p {
   height: 45px;
   border-radius: 50%;
   background-color: #17468b88;
-  box-sizing: border-box;
+  object-fit: cover;
+  display: block;
 }
 
 #background_pet {
@@ -67,7 +68,7 @@ p {
 .background_icon {
   background-color: #0a55ac2c;
   object-fit: contain;
-  padding: 8px;
+  padding: 6px;
   object-fit: cover;
 }
 

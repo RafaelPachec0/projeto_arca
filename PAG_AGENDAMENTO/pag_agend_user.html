@@ -4,45 +4,169 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Notificações</title>
+    <title>Meus Agendamentos</title>
     <link rel="stylesheet" href="../CSS/style.css" />
-    <link rel="stylesheet" href="../CSS/notificacao.css">
+    <link rel="stylesheet" href="../CSS/agendament.css" />
 </head>
 
 <body>
+
     <header>
-        <div class="logo">
-            <h2>Projeto ARCA</h2>
-        </div>
-
-        <nav class="menu-central">
-            <a href="../index.html" class="selec">Início</a>
-            <a href="#" class="selec">Perfil</a>
-            <a href="../PAG_AJUDA/pag_ajuda.html" class="selec">Ajuda</a>
+        <div class="logo">Programa ARCA</div>
+        <nav>
+            <a href="../index.html">Início</a>
+            <a href="../PAG_PERFIL/pag_perfil.html">Perfil</a>
+            <a href="../PAG_AJUDA/pag_ajuda.html">Ajuda</a>
         </nav>
-
         <div class="icones-apoio">
-            <a href="#" class="selec icon"><img src="../ICONES/config.png" alt="Configurações" height="30px"
-                    width="30px"></a>
-            <a href="../PAG_NOTIFICACAO/pag_notificacao.html" class="selec icon"><img src="../ICONES/notific.png" alt="Notificações" height="30px"
-                    width="30px"></a>
+            <a href="#"><img src="../ICONES/config.png" alt="Configurações" height="30" width="30"></a>
+            <a href="../PAG_NOTIFICACAO/pag_notificacao.html"><img src="../ICONES/notific_header.png" alt="Notificações" height="30" width="30"></a>
         </div>
     </header>
 
-    <div class="container">
+    <main class="container">
+
         <div class="titulo">
-            <p><b>MINHA CONTA / AGENDAMENTOS</b></p>
-
-            <h1><a href="../index.html"><span style="font-size: 40px;">
-                        < </span></a> Meus Agendamentos</h1>
-
-            <p>Acompanhe seus agendamentos</p>
+            <p class="breadcrumb">SERVIÇOS / AGENDAMENTOS</p>
+            <h1><a href="../index.html">&lt;</a> Meus Agendamentos</h1>
+            <p class="subtitulo">Acompanhe suas consultas e procedimentos agendados</p>
         </div>
 
+        <div class="card-agendamento castracao">
+            <div class="header-card">
+                <h3>Castração</h3>
+                <span class="status confirmado">Confirmado</span>
+            </div>
+            <p class="sub-info">
+                <img src="../ICONES/pata_pet.png" alt="Pet" class="icon-sub">
+                Pet: Rex &nbsp;•&nbsp; Protocolo: CAS789456123
+            </p>
+            <div class="detalhes-agendamento">
+                <div class="info-box">
+                    <div class="info-row">
+                        <img src="../ICONES/data.png" alt="Data" class="icon-detalhe">
+                        <div class="texto">
+                            <p class="label">Data</p>
+                            <p class="valor">25/05/2026</p>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <img src="../ICONES/horario.png" alt="Horário" class="icon-detalhe">
+                        <div class="texto">
+                            <p class="label">Horário</p>
+                            <p class="valor">14:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="info-row">
+                        <img src="../ICONES/local.png" alt="Local" class="icon-detalhe">
+                        <div class="texto">
+                            <p class="label">Local do Atendimento</p>
+                            <p class="valor link">Clínica Veterinária Municipal</p>
+                            <p class="endereco">Rua das Flores, 123 - Centro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="acoes-card">
+                <button class="btn-secundario"><strong>Remarcar</strong></button>
+                <button class="btn-secundario"><strong>Cancelar Agendamento</strong></button>
+            </div>
+        </div>
+
+        <div class="card-agendamento vacinacao">
+            <div class="header-card">
+                <h3>Vacinação</h3>
+                <span class="status confirmado">Confirmado</span>
+            </div>
+            <p class="sub-info">
+                <img src="../ICONES/pata_pet.png" alt="Pet" class="icon-sub">
+                Pet: Mia &nbsp;•&nbsp; Protocolo: VAC456789012
+            </p>
+            <div class="detalhes-agendamento">
+                <div class="info-box">
+                    <div class="info-row">
+                        <img src="../ICONES/data.png" alt="Data" class="icon-detalhe">
+                        <div class="texto">
+                            <p class="label">Data</p>
+                            <p class="valor">28/05/2026</p>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <img src="../ICONES/horario.png" alt="Horário" class="icon-detalhe">
+                        <div class="texto">
+                            <p class="label">Horário</p>
+                            <p class="valor">10:30</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="info-row">
+                        <img src="../ICONES/local.png" alt="Local" class="icon-detalhe">
+                        <div class="texto">
+                            <p class="label">Local do Atendimento</p>
+                            <p class="valor link">Centro de Zoonoses</p>
+                            <p class="endereco">Av. Principal, 456 - Jardim das Palmeiras</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="acoes-card">
+                <button class="btn-secundario"><strong>Remarcar</strong></button>
+                <button class="btn-secundario"><strong>Cancelar Agendamento</strong></button>
+            </div>
+        </div>
+
+        <div class="card-agendamento castracao">
+            <div class="header-card">
+                <h3>Castração</h3>
+                <span class="status pendente">Pendente</span>
+            </div>
+            <p class="sub-info">
+                <img src="../ICONES/pata_pet.png" alt="Pet" class="icon-sub">
+                Pet: Bob &nbsp;•&nbsp; Protocolo: CAS123789456
+            </p>
+            <div class="detalhes-agendamento">
+                <div class="info-box">
+                    <div class="info-row">
+                        <img src="../ICONES/data.png" alt="Data" class="icon-detalhe">
+                        <div class="texto">
+                            <p class="label">Data</p>
+                            <p class="valor">02/06/2026</p>
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <img src="../ICONES/horario.png" alt="Horário" class="icon-detalhe">
+                        <div class="texto">
+                            <p class="label">Horário</p>
+                            <p class="valor">09:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="info-row">
+                        <img src="../ICONES/local.png" alt="Local" class="icon-detalhe">
+                        <div class="texto">
+                            <p class="label">Local do Atendimento</p>
+                            <p class="valor link">Clínica Veterinária Municipal</p>
+                            <p class="endereco">Rua das Flores, 123 - Centro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="acoes-card">
+                <button class="btn-secundario"><strong>Remarcar</strong></button>
+                <button class="btn-secundario"><strong>Cancelar Agendamento</strong></button>
+            </div>
+        </div>
+
+    </main>
 
     <footer>
-        <p>© Copyright GroupTwo</p>
+        © Copyright GroupTwo
     </footer>
+
 </body>
 
 </html>
