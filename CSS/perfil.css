@@ -72,7 +72,6 @@ p {
   object-fit: cover;
 }
 
-
 .seta-link {
   color: #1f4487;
   font-weight: bold;
@@ -80,10 +79,10 @@ p {
 
 .card_sair {
   background-color: white;
-  color: #E03647;
+  color: #e03647;
   padding: 15px;
   border-radius: 15px;
-  border: 2px solid
+  border: 2px solid;
 }
 
 .icon_sair {
