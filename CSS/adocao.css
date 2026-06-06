@@ -6,58 +6,66 @@
 }
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     gap: 20px;
-    justify-content: flex-start;
 }
 
 .card-pet {
     background-color: white;
-    flex: 0 0 240px;     
     border-radius: 15px;
-    padding-bottom: 20px; 
     box-shadow: 3px 3px 3px #07789128;
     text-align: center;
     transition: transform 0.2s ease;
-    overflow: hidden; 
-}
-
-.card-pet:hover {
-    transform: translateY(-5px);
-}
-
-.imagem-pet {
-    height: 160px; 
-    width: 100%;
     overflow: hidden;
 }
 
-.foto-animal {
+.card-pet:hover { transform: translateY(-5px); }
+
+.imagem-pet { height: 160px; width: 100%; overflow: hidden; }
+.foto-animal, .foto-pet { width: 100%; height: 100%; object-fit: cover; }
+
+.grid-adocao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.card-formulario {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.08);
+}
+
+input, textarea {
     width: 100%;
-    height: 100%;
-    object-fit: cover; 
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #d0d8ea;
+    border-radius: 8px;
 }
 
-.info-pet {
-    padding: 15px;
-}
-
-.btn-detalhes {
+.btn-detalhes, .btn-primario {
     background-color: #1f4487;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 12px;
     border-radius: 8px;
     width: 100%;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 10px;
 }
 
-.femea {
-    background-color: #7a378c1a;
-    color: #7a378c;
+.btn-secundario {
+    background: #e0e0e0;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.femea, .macho {
     border-radius: 12px;
     padding: 5px 15px;
     margin: 8px 0;
@@ -65,14 +73,5 @@
     font-weight: bold;
     font-size: 13px;
 }
-
-.macho {
-    background-color: #25c3d91a;
-    color: #1e7d8f;
-    border-radius: 12px;
-    padding: 5px 15px;
-    margin: 8px 0;
-    display: inline-block;
-    font-weight: bold;
-    font-size: 13px;
-}
+.femea { background-color: #7a378c1a; color: #7a378c; }
+.macho { background-color: #25c3d91a; color: #1e7d8f; }

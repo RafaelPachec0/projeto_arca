@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f6fb;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+
+
+.cabecalho-superior{
+    background:#2f4b8f;
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 120px;
+}
+
+.logo-arca img{
+    height:60px;
+}
+
+.menu-navegacao{
+    display:flex;
+    gap:30px;
+}
+
+.menu-navegacao a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.area-icones{
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+
+.icone-configuracao{
+    color:white;
+    font-size:18px;
+}
+
+.area-icones img{
+    height:20px;
+}
+
+
+
+.conteudo{
+    width:100%;
+    max-width:1100px;
+    margin:40px auto;
+    flex:1;
+}
+
+.caminho-pagina{
+    color:#2f4b8f;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.titulo-pagina{
+    color:#2f4b8f;
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+.subtitulo-pagina{
+    color:#777;
+}
+
+.cartao{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    margin-top:25px;
+}
+
+.titulo-secao{
+    color:#2f4b8f;
+    margin-bottom:20px;
+}
+
+
+
+.tabela-solicitacoes{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.tabela-solicitacoes th{
+    background:#eef1f7;
+    color:#2f4b8f;
+    padding:15px;
+    text-align:left;
+}
+
+.tabela-solicitacoes td{
+    padding:15px;
+    border-bottom:1px solid #ddd;
+}
+
+.status-pendente{
+    background:#fff3cd;
+    color:#856404;
+    padding:6px 12px;
+    border-radius:20px;
+}
+
+
+
+.botao-aprovar{
+    background:#2f4b8f;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.botao-rejeitar{
+    background:white;
+    color:#d9534f;
+    border:1px solid #d9534f;
+    padding:8px 15px;
+    border-radius:6px;
+    cursor:pointer;
+    margin-left:5px;
+}
+
+
+
+.rodape{
+    background:#2f4b8f;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
