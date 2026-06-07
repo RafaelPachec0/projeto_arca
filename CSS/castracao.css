@@ -11,14 +11,7 @@
     margin-bottom: 20px;
 }
 
-.grade-formulario {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    margin-bottom: 25px;
-}
-
-input, select, textarea {
+select {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -27,33 +20,43 @@ input, select, textarea {
     outline: none;
 }
 
-textarea {
-    min-height: 120px;
-    resize: none;
+.selecao-animal {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: center;
 }
 
-.campo-inteiro {
-    grid-column: span 2;
+.selecao-animal select {
+    flex: 1;
 }
 
-.mapa {
-    border-radius: 10px;
-    overflow: hidden;
+.botao-cadastrar {
+    background-color: white;
+    color: #1f4487;
+    border: 1px solid #1f4487;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    white-space: nowrap;
 }
+
+.botao-cadastrar:hover { background-color: #f0f4f8; }
 
 .upload-arquivo {
     border: 2px dashed #ccc;
     border-radius: 8px;
     padding: 25px;
     text-align: center;
-}
-
-.declaracao-legal {
-    margin-top: 25px;
     margin-bottom: 25px;
 }
 
-.caixa-declaracao {
+.requisitos {
+    margin-bottom: 10px;
+}
+
+.item-requisito {
     background-color: #eef1f7;
     padding: 15px;
     border-radius: 8px;
