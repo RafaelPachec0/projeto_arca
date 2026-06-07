@@ -1,117 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Solicitação de Castração</title>
 
-<link rel="stylesheet" href="../CSS/Castração_style.css">
-<link rel="stylesheet" href="../CSS/Estilo_style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitação de Castração</title>
+
+    <link rel="stylesheet" href="../CSS/Castração_style.css">
+    <link rel="stylesheet" href="../CSS/Estilo_style.css">
 </head>
 
 <body>
-
-<header class="cabecalho-superior">
-
-    <div class="logo-arca">
-        <img src="../IMG/arca-removebg-preview.png" alt="Programa ARCA">
-    </div>
-
-    <nav class="menu-navegacao">
-        <a href="#">Início</a>
-        <a href="#">Perfil</a>
-        <a href="#">Ajuda</a>
-    </nav>
-
-    <div class="area-icones">
-        <span class="icone-configuracao">⚙</span>
-        <img src="../IMG/sino.png" alt="Notificações">
-    </div>
-
-</header>
-
-<main class="conteudo">
-
-    <section class="cabecalho-pagina">
-
-        <div class="caminho-pagina">
-            SERVIÇOS / CASTRAÇÃO
+    <header>
+        <div class="logo">
+            <h2>Projeto ARCA</h2>
         </div>
 
-        <h1 class="titulo-pagina">
-            ‹ Solicitação de Castração
-        </h1>
+        <nav class="menu-central">
+            <a href="./index.html" class="selec">Início</a>
+            <a href="./PAG_PERFIL/pag_perfil.html" class="selec">Perfil</a>
+            <a href="./PAG_AJUDA/pag_ajuda.html" class="selec">Ajuda</a>
+        </nav>
 
-        <p class="subtitulo-pagina">
-            Solicite a castração gratuita do seu pet
-        </p>
-
-    </section>
-
-    <section class="cartao">
-
-        <h2 class="titulo-secao">
-            Seleção do Animal
-        </h2>
-
-        <div class="selecao-animal">
-
-            <select>
-                <option>Selecione animal cadastrado</option>
-            </select>
-
-            <button class="botao-cadastrar">
-                Cadastrar Novo
-            </button>
-
+        <div class="icones-apoio">
+            <a href="#" class="selec icon"><img src="./ICONES/config.png" alt="Configurações" height="30px"
+                    width="30px" /></a>
+            <a href="./PAG_NOTIFICACAO/pag_notificacao.html" class="selec icon"><img src="./ICONES/notific_header.png"
+                    alt="Notificações" height="30px" width="30px" /></a>
         </div>
+    </header>
 
-        <div class="upload-arquivo">
-            <input type="file">
-        </div>
+    <main class="conteudo">
 
-        <div class="requisitos">
+        <section class="cabecalho-pagina">
+
+            <div class="caminho-pagina">
+                SERVIÇOS / CASTRAÇÃO
+            </div>
+
+            <h1 class="titulo-pagina">
+                <a href="../index.html"><span style="font-size: 40px">&lt; </span></a>
+                Solicitação de Castração
+            </h1>
+
+            <p class="subtitulo-pagina">
+                Solicite a castração gratuita do seu pet
+            </p>
+
+        </section>
+
+        <section class="cartao">
 
             <h2 class="titulo-secao">
-                Requisitos
+                Seleção do Animal
             </h2>
 
-            <div class="item-requisito">
-                <input type="checkbox">
-                O animal possui mais de 6 meses de idade
+            <div class="selecao-animal">
+
+                <select>
+                    <option>Selecione animal cadastrado</option>
+                </select>
+
+                <button class="botao-cadastrar">
+                    Cadastrar Novo
+                </button>
+
             </div>
 
-            <div class="item-requisito">
-                <input type="checkbox">
-                O animal está em boas condições de saúde
+            <div class="upload-arquivo">
+                <input type="file">
             </div>
 
-            <div class="item-requisito">
-                <input type="checkbox">
-                Declaro estar ciente das orientações pós-operatórias
+            <div class="requisitos">
+
+                <h2 class="titulo-secao">
+                    Requisitos
+                </h2>
+
+                <div class="item-requisito">
+                    <input type="checkbox">
+                    O animal possui mais de 6 meses de idade
+                </div>
+
+                <div class="item-requisito">
+                    <input type="checkbox">
+                    O animal está em boas condições de saúde
+                </div>
+
+                <div class="item-requisito">
+                    <input type="checkbox">
+                    Declaro estar ciente das orientações pós-operatórias
+                </div>
+
             </div>
 
-        </div>
+            <div class="area-botoes">
 
-        <div class="area-botoes">
+                <button class="botao-cancelar">
+                    Cancelar
+                </button>
 
-            <button class="botao-cancelar">
-                Cancelar
-            </button>
+                <button class="botao-confirmar">
+                    Confirmar
+                </button>
 
-            <button class="botao-confirmar">
-                Confirmar
-            </button>
+            </div>
 
-        </div>
+        </section>
 
-    </section>
+    </main>
 
-</main>
-
-<footer class="rodape">
-    © Copyright GroupTwo
-</footer>
+    <footer class="rodape">
+        © Copyright GroupTwo
+    </footer>
 
 </body>
+
 </html>
