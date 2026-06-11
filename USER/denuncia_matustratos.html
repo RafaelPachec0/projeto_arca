@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denúncia de Maus-Tratos</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/denuncias.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>Projeto ARCA</h2>
+        </div>
+        <nav class="menu-central">
+            <a href="home.html" class="selec">Início</a>
+            <a href="pag_perfil.html" class="selec">Perfil</a>
+            <a href="pag_ajuda.html" class="selec">Ajuda</a>
+        </nav>
+        <div class="icones-apoio">
+            <a href="#" class="selec icon"><img src="../ICONES/config.png" alt="Configurações" height="30px" width="30px"></a>
+            <a href="../PAG_NOTIFICACAO/pag_notificacao.html" class="selec icon"><img src="../ICONES/notific_header.png" alt="Notificações" height="30px" width="30px"></a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="titulo">
+            <p><b>SERVIÇOS / DENÚNCIA</b></p>
+            <h1><a href="home.html"><span style="font-size: 40px">&lt; </span></a>Denúncia de Maus-Tratos</h1>
+            <p>Registre uma denúncia de forma segura e anônima</p>
+        </div>
+
+        <div class="cartao">
+            <h2 class="titulo-secao">Detalhes da Denúncia</h2>
+
+            <div class="grade-formulario">
+                <textarea placeholder="Descreva detalhadamente o incidente de maus-tratos..." class="campo-inteiro"></textarea>
+
+                <input type="text" placeholder="Endereço completo ou referência">
+
+                <select>
+                    <option>Selecione Espécie</option>
+                    <option>Cachorro</option>
+                    <option>Gato</option>
+                </select>
+
+                <div class="mapa campo-inteiro">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12594.796413486143!2d-40.27079796092201!3d-20.19838958248505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb81ff105549a61%3A0x409c2919913258a7!2sSerra%20-%20ES!5e0!3m2!1spt-PT!2sbr!4v1778539314386!5m2!1spt-PT!2sbr"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+
+                <div class="upload-arquivo campo-inteiro">
+                    <input type="file">
+                </div>
+            </div>
+
+            <div class="declaracao-legal">
+                <h2 class="titulo-secao">Declaração Legal</h2>
+                <div class="caixa-declaracao">
+                    <input type="checkbox">
+                    Declaro estar ciente de que informações falsas podem gerar consequências legais.
+                </div>
+            </div>
+
+            <div class="area-botoes">
+                <button class="botao-cancelar">Cancelar</button>
+                <button class="botao-confirmar">Enviar Denúncia</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© Copyright GroupTwo</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,77 @@
+.body-login {
+
+ height: 100dvh;
+ background: linear-gradient(to bottom, #1350b3, rgb(130, 165, 221), #ffffff);
+ font-family: "Josefin Sans";
+}
+
+.main-login {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100dvh; 
+}
+
+.box-login {
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 500px;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.5); 
+
+}
+
+
+.input-group {
+  border: 1px solid gray;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #ffffff;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.input-group input::placeholder {
+  color: gray;
+}
+
+h1 {
+  color: #114291;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+p {
+  color: rgb(9, 29, 86);
+  font-size: 15px;
+  text-align: center;
+  text-align: justify;
+}
+
+a {
+  color: #3b82f6;
+  font-size: 15px;
+}
+
+.botao-login {
+  width: 100%;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #ffffff;
+  border: 2px solid #114291;
+  color: #114291;
+}
+
+.links-login {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
