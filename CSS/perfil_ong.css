@@ -1,0 +1,96 @@
+body {
+  color: #1f4487;
+}
+
+.card_user {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px #07789128;
+  padding: 30px;
+  gap: 30px;
+}
+
+#imagem_user {
+  height: 120px;
+  width: 120px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.info_user {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.nome-ong {
+  font-size: 18px;
+  color: #1f4487;
+}
+
+.lista-perfil {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card-perfil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px #07789128;
+  padding: 15px 25px;
+}
+
+.bloco-esquerda-perfil {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+p {
+  color: #5a6b85;
+}
+
+.icon_perfil {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.background_icon {
+  background-color: #0a55ac2c;
+  object-fit: contain;
+  padding: 6px;
+}
+
+#fundo-resgate-icon   { background-color: #f287052c; }
+#fundo-vacina-icon    { background-color: #25d9522d; }
+#fundo-castracao-icon { background-color: #62c3d92d; }
+#fundo-adocao-icon    { background-color: #f2226e2a; }
+#fundo-denuncia-icon  { background-color: #d936542d; }
+
+.seta-link {
+  color: #1f4487;
+  font-weight: bold;
+}
+
+.card_sair {
+  background-color: white;
+  color: #e03647;
+  padding: 15px;
+  border-radius: 15px;
+  border: 2px solid #e03647;
+}
+
+.icon_sair {
+  width: 30px;
+  height: 30px;
+}

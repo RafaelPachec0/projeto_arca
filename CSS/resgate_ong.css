@@ -1,0 +1,191 @@
+.card-agendamento {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px #07789128;
+  padding: 22px 24px;
+  margin-bottom: 20px;
+  border-left: 4px solid transparent;
+}
+
+.card-agendamento.pendente {
+  border-left-color: #e3c30e;
+}
+.card-agendamento.atendimento {
+  border-left-color: #35a8e0;
+}
+.card-agendamento.concluido {
+  border-left-color: #21cf55;
+}
+
+.header-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.header-card h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1f4487;
+}
+
+.status {
+  display: inline-block;
+  padding: 4px 14px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status-pendente {
+  background-color: #e3c30e;
+  color: white;
+}
+.status-atendimento {
+  background-color: #35a8e0;
+  color: white;
+}
+.status-concluido {
+  background-color: #21cf55;
+  color: white;
+}
+
+.sub-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  color: #5a6b85;
+  margin-bottom: 16px;
+}
+
+.icon-sub {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  opacity: 0.55;
+}
+
+.detalhes-agendamento {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.info-box {
+  flex: 1;
+  border: 1px solid #e8edf5;
+  border-radius: 8px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-detalhe {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.texto .label {
+  font-size: 11px;
+  color: #9aa5b8;
+  margin-bottom: 1px;
+}
+
+.texto .valor {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1f4487;
+}
+
+.texto .valor.link {
+  color: #35a8e0;
+  font-weight: 600;
+}
+
+.texto .endereco {
+  font-size: 12px;
+  color: #9aa5b8;
+  margin-top: 1px;
+}
+
+.acoes-card {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-aceitar {
+  flex: 1;
+  background-color: #1f4487;
+  color: white;
+  border: none;
+  padding: 11px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn-aceitar:hover {
+  background-color: #163366;
+}
+
+.btn-concluir {
+  flex: 1;
+  background-color: #21cf55;
+  color: white;
+  border: none;
+  padding: 11px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn-concluir:hover {
+  background-color: #18a041;
+}
+
+.btn-secundario {
+  flex: 1;
+  background-color: white;
+  border: 1px solid #d0d8ea;
+  color: #1f4487;
+  padding: 11px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-secundario:hover {
+  background-color: #1f4487;
+  color: white;
+  border-color: #1f4487;
+}
+
+.btn-rejeitar {
+  flex: 1;
+  background-color: white;
+  color: #e03647;
+  border: 1px solid #e03647;
+  padding: 11px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.btn-rejeitar:hover {
+  background-color: #e03647;
+  color: white;
+}

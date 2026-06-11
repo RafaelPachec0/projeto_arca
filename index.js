@@ -10,6 +10,8 @@ form.addEventListener("submit", function (e) {
         window.location.href = "./PREF/gestao_geral_pref.html";
     } else if (usuario === "tutor" && senha === "123456") {
         window.location.href = "./USER/home.html";
+    } else if (usuario === "Ong" && senha === "ong$-135") {
+        window.location.href = "./ONG/home_ong.html";
     } else {
         alert("Usuário ou senha inválidos.");
     }
