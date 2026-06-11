@@ -1,148 +1,183 @@
 <!doctype html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Perfil</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/perfil.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meu Perfil</title>
-  <link rel="stylesheet" href="../CSS/style.css" />
-  <link rel="stylesheet" href="../CSS/perfil.css" />
-</head>
-
-<body>
-  <header>
-    <div class="logo">
-      <h2>Projeto ARCA</h2>
-    </div>
-
-    <nav class="menu-central">
-      <a href="home.html" class="selec">Início</a>
-      <a href="pag_perfil.html" class="selec">Perfil</a>
-      <a href="pag_ajuda.html" class="selec">Ajuda</a>
-    </nav>
-
-    <div class="icones-apoio">
-      <a href="#" class="selec icon">
-        <img src="../ICONES/config.png" alt="Configurações" height="30px" width="30px" />
-      </a>
-      <a href="../PAG_NOTIFICACAO/pag_notificacao.html" class="selec icon">
-        <img src="../ICONES/notific_header.png" alt="Notificações" height="30px" width="30px" />
-      </a>
-    </div>
-  </header>
-
-  <div class="container">
-    <div class="titulo">
-      <p><b>MINHA CONTA / MEU PERFIL</b></p>
-      <h1>
-        <a href="home.html"><span style="font-size: 40px">&lt; </span></a>
-        MEU PERFIL
-      </h1>
-      <p>Gerencie suas informações e preferências</p>
-    </div>
-
-    <div class="card_user">
-      <div class="foto_user">
-        <img src="../ICONES/foto_generica.png" alt="Foto Usuário" id="imagem_user" />
+  <body>
+    <header>
+      <div class="logo">
+        <h2>Projeto ARCA</h2>
       </div>
-      <div class="info_user">
-        <p style="color: black;"><b>João da Silva</b></p>
-        <p>joao.silva@gmail.com</p>
-        <p>CPF: 123.456.789-00</p>
+
+      <nav class="menu-central">
+        <a href="home.html" class="selec">Início</a>
+        <a href="pag_perfil.html" class="selec">Perfil</a>
+        <a href="pag_ajuda.html" class="selec">Ajuda</a>
+      </nav>
+
+      <div class="icones-apoio">
+        <a href="#" class="selec icon">
+          <img
+            src="../ICONES/config.png"
+            alt="Configurações"
+            height="30px"
+            width="30px"
+          />
+        </a>
+        <a href="../PAG_NOTIFICACAO/pag_notificacao.html" class="selec icon">
+          <img
+            src="../ICONES/notific_header.png"
+            alt="Notificações"
+            height="30px"
+            width="30px"
+          />
+        </a>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="titulo">
+        <p><b>MINHA CONTA / MEU PERFIL</b></p>
+        <h1>
+          <a href="home.html"><span style="font-size: 40px">&lt; </span></a>
+          MEU PERFIL
+        </h1>
+        <p>Gerencie suas informações e preferências</p>
+      </div>
+
+      <div class="card_user">
+        <div class="foto_user">
+          <img
+            src="../ICONES/foto_generica.png"
+            alt="Foto Usuário"
+            id="imagem_user"
+          />
+        </div>
+        <div class="info_user">
+          <p style="color: black"><b>João da Silva</b></p>
+          <p>joao.silva@gmail.com</p>
+          <p>CPF: 123.456.789-00</p>
+        </div>
+      </div>
+
+      <br />
+      <br />
+      <h2>Configurações da Conta</h2>
+      <br />
+      <hr />
+      <br />
+
+      <div class="lista-perfil">
+        <a href="">
+          <div class="card-perfil">
+            <div class="bloco-esquerda-perfil">
+              <img
+                src="../ICONES/foto_generica.png"
+                alt="Ícone Dados"
+                class="icon_perfil background_icon"
+              />
+              <div class="info-perfil">
+                <h3>Dados Pessoais</h3>
+                <p>Gerencie suas informações pessoais</p>
+              </div>
+            </div>
+            <p class="seta-link"><span style="font-size: 20px">&gt;</span></p>
+          </div>
+        </a>
+
+        <a href="../PAG_MEUSPETS/pag_meuspets.html">
+          <div class="card-perfil">
+            <div class="bloco-esquerda-perfil">
+              <img
+                src="../ICONES/pata_pet.png"
+                alt="Ícone Pet"
+                class="icon_perfil background_icon"
+                id="background_pet"
+              />
+              <div class="info-perfil">
+                <h3>Meus Pets</h3>
+                <p>Veja e gerencie seus pets cadastrados</p>
+              </div>
+            </div>
+            <p class="seta-link"><span style="font-size: 20px">&gt;</span></p>
+          </div>
+        </a>
+
+        <a href="">
+          <div class="card-perfil">
+            <div class="bloco-esquerda-perfil">
+              <img
+                src="../ICONES/seguranca.png"
+                alt="Ícone Segurança"
+                class="icon_perfil background_icon"
+              />
+              <div class="info-perfil">
+                <h3>Segurança</h3>
+                <p>Altere sua senha e configurações de segurança</p>
+              </div>
+            </div>
+            <p class="seta-link"><span style="font-size: 20px">&gt;</span></p>
+          </div>
+        </a>
+
+        <a href="../PAG_NOTIFICACAO/pag_notificacao.html">
+          <div class="card-perfil">
+            <div class="bloco-esquerda-perfil">
+              <img
+                src="../ICONES/notific.png"
+                alt="Ícone Notificações"
+                class="icon_perfil background_icon"
+              />
+              <div class="info-perfil">
+                <h3>Notificações</h3>
+                <p>Configure suas preferências de notificação</p>
+              </div>
+            </div>
+            <p class="seta-link"><span style="font-size: 20px">&gt;</span></p>
+          </div>
+        </a>
+
+        <a href="../PAG_AJUDA/pag_ajuda.html">
+          <div class="card-perfil">
+            <div class="bloco-esquerda-perfil">
+              <img
+                src="../ICONES/central_ajuda.png"
+                alt="Ícone"
+                class="icon_perfil background_icon"
+              />
+              <div class="info-perfil">
+                <h3>Ajuda e Suporte</h3>
+                <p>Central de ajuda e contato</p>
+              </div>
+            </div>
+            <p class="seta-link"><span style="font-size: 20px">&gt;</span></p>
+          </div>
+        </a>
+
+        <br />
+
+        <a href="../index.html">
+          <div class="card_sair">
+            <div class="bloco-esquerda-perfil">
+              <img
+                src="../ICONES/sair_conta.png"
+                alt="Ícone"
+                class="icon_sair"
+              />
+              <div class="info-perfil">
+                <h3>Sair da Conta</h3>
+              </div>
+            </div>
+          </div>
+        </a>
       </div>
     </div>
 
-    <br>
-    <br>
-    <h2>Configurações da Conta</h2>
-    <br />
-    <hr />
-    <br />
-
-    <div class="lista-perfil">
-      <a href="">
-        <div class="card-perfil">
-          <div class="bloco-esquerda-perfil">
-            <img src="../ICONES/foto_generica.png" alt="Ícone Dados" class="icon_perfil background_icon" />
-            <div class="info-perfil">
-              <h3>Dados Pessoais</h3>
-              <p>Gerencie suas informações pessoais</p>
-            </div>
-          </div>
-          <p class="seta-link"><span style="font-size: 20px;">&gt;</span></p>
-        </div>
-      </a>
-
-      <a href="../PAG_MEUSPETS/pag_meuspets.html">
-        <div class="card-perfil">
-          <div class="bloco-esquerda-perfil">
-            <img src="../ICONES/pata_pet.png" alt="Ícone Pet" class="icon_perfil background_icon" id="background_pet" />
-            <div class="info-perfil">
-              <h3>Meus Pets</h3>
-              <p>Veja e gerencie seus pets cadastrados</p>
-            </div>
-          </div>
-          <p class="seta-link"><span style="font-size: 20px;">&gt;</span></p>
-        </div>
-      </a>
-
-      <a href="">
-        <div class="card-perfil">
-          <div class="bloco-esquerda-perfil">
-            <img src="../ICONES/seguranca.png" alt="Ícone Segurança" class="icon_perfil background_icon">
-            <div class="info-perfil">
-              <h3>Segurança</h3>
-              <p>Altere sua senha e configurações de segurança</p>
-            </div>
-          </div>
-          <p class="seta-link"><span style="font-size: 20px;">&gt;</span></p>
-        </div>
-      </a>
-
-      <a href="../PAG_NOTIFICACAO/pag_notificacao.html">
-        <div class="card-perfil">
-          <div class="bloco-esquerda-perfil">
-            <img src="../ICONES/notific.png" alt="Ícone Notificações" class="icon_perfil background_icon" />
-            <div class="info-perfil">
-              <h3>Notificações</h3>
-              <p>Configure suas preferências de notificação</p>
-            </div>
-          </div>
-          <p class="seta-link"><span style="font-size: 20px;">&gt;</span></p>
-        </div>
-      </a>
-
-      <a href="../PAG_AJUDA/pag_ajuda.html">
-        <div class="card-perfil">
-          <div class="bloco-esquerda-perfil">
-            <img src="../ICONES/central_ajuda.png" alt="Ícone" class="icon_perfil background_icon" />
-            <div class="info-perfil">
-              <h3>Ajuda e Suporte</h3>
-              <p>Central de ajuda e contato</p>
-            </div>
-          </div>
-          <p class="seta-link"><span style="font-size: 20px;">&gt;</span></p>
-        </div>
-      </a>
-
-      <br>
-
-      <a href="">
-        <div class="card_sair">
-          <div class="bloco-esquerda-perfil">
-            <img src="../ICONES/sair_conta.png" alt="Ícone" class="icon_sair" />
-            <div class="info-perfil">
-              <h3>Sair da Conta</h3>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-
-  <footer>
-    © Copyright GroupTwo
-  </footer>
-</body>
-
+    <footer>© Copyright GroupTwo</footer>
+  </body>
 </html>
